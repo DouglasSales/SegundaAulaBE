@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="graficos.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+
+    <script>
+        google.charts.load('current', {'packages':['corechart'], 'language':'pt'});
+
+        //Callback para montar os gráficos no javascript
+        google.charts.setOnLoadCallback(desenharGraficos);
+    </script>
+</head>
+<body>
+    <section id="main">
+        <header class="mainHeader">Header</header>
+        <!--<nav class="mainNav">NAv</nav>
+        <article class="mainContent">                     
+        </article>
+        <aside class="mainAside"> Aside </aside>
+        <footer class="mainFooter">Footer</footer> -->
+
+        <div id="graficoPizza"></div>
+        <div id="graficoLinha"></div>
+        <div id="graficoColuna"></div>
+        <div id="graficoColunaSurpresa"></div>
+        <div id="graficoBarrasSurpresa"></div>
+        <div id="graficoBarrasJson"></div>
+              
+    </section>
+
+    <!--
+          <div id="graficoPizza"></div>
+    <div id="graficoLinha"></div>
+    <div id="graficoColuna"></div>
+    <div id="graficoColunaSurpresa"></div>
+    <div id="graficoBarrasSurpresa"></div>
+    <div id="graficoBarrasJson"></div>
+    -->
+  
+</body>
+</html>
